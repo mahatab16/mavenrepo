@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdevs</groupId>
   <artifactId>studentapp</artifactId>
-  <version>2.5-RELEASE</version>
+  <version>2.5-SANPSHOT</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -29,12 +29,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.42.129:8081/repository/windows-core-os-release/</url>
+            <url>http://192.168.42.130:8081/repository/windows-core-os-release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.42.129:8081/repository/windows-core-os/</url>
+            <url>http://192.168.42.130:8081/repository/windows-core-os-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
