@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdevs</groupId>
   <artifactId>studentapp</artifactId>
-  <version>2.5-SANPSHOT</version>
+  <version>2.5-SNAPSHOT</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -34,7 +34,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.42.130:8081/repository/windows-core-os-snap</url>
+            <url>http://192.168.42.130:8081/repository/windows-core-os-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
