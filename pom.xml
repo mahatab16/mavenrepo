@@ -29,12 +29,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.42.130:8081/repository/windows-core-os-release/</url>
+            <url>http://192.168.42.131:8081/repository/maven-sample-release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.42.130:8081/repository/windows-core-os-snap/</url>
+            <url>http://192.168.42.131:8081/repository/maven-sample-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
