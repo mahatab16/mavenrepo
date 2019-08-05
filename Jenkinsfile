@@ -4,7 +4,7 @@ pipeline {
     REVISION = "0.0.${env.BUILD_ID}"
     }
     parameters {
-        string(name: 'deploy-env', defaultValue: 'SNAPSHOT', description: 'Where you want to deploy?')
+        string(name: 'environment', defaultValue: 'SNAPSHOT', description: 'Where you want to deploy?')
     }
     stages {
         stage('compile') {
@@ -27,7 +27,7 @@ pipeline {
                   branch 'dev'
             }
             steps {
-                echo "${params.deploy-env} World!"
+                echo "${params.environment} World!"
             }
             steps {
                   script {
