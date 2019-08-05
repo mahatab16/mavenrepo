@@ -25,7 +25,10 @@ pipeline {
         stage('deploy') {
             when {
                   branch 'dev'
-            } 
+            }
+            steps {
+                echo "${params.deploy-env} World!"
+            }
             steps {
                   script {
                          currentBuild.displayName = "${REVISION}"
