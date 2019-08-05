@@ -28,14 +28,8 @@ pipeline {
             }
             steps {
                 echo "${params.environment} World!"
+               sh 'mvn deploy'
             }
-            steps {
-                  script {
-                         currentBuild.displayName = "${REVISION}"
-                 }
-        
-                sh 'mvn deploy'
-           }
        }
     }
 }
