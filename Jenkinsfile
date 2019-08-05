@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+    REVISION = "0.0.${env.BUILD_ID}"
+    }
     stages {
         stage('compile') {
             steps {
@@ -16,5 +19,17 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('deploy') {
+            when {
+                  branch 'master'
+            } 
+            steps {
+                  script {
+                         currentBuild.displayName = "${REVISION}"
+                 }
+        
+                sh 'mvn deploy scm:tag -Drevision=${REVISION}'
+           }
+       }
     }
 }
