@@ -28,7 +28,7 @@ pipeline {
                          currentBuild.displayName = "${REVISION}"
                  }
         
-                sh 'mvn deploy scm:tag -Drevision=${REVISION}'
+                sh 'mvn deploy'
            }
        }
     }
