@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean package -Dv=${BUILD_NUMBER}'
+                sh 'mvn clean package'
             }
         }
         stage('Test') {
