@@ -4,7 +4,8 @@ pipeline {
     REVISION = "0.0.${env.BUILD_ID}"
     }
     parameters {
-        string(name: 'environment', defaultValue: 'SNAPSHOT', description: 'Where you want to deploy?')
+        string(name: 'environment', defaultValue: 'SNAPSHOT', description: 'The target environment')
+        string(name: 'environment', defaultValue: 'RELEASE', description: 'The target environment')
     }
     stages {
         stage('compile') {
